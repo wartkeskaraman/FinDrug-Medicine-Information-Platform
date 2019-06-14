@@ -5,6 +5,7 @@ In this platform there are informations about illnesses and departments.
 <br>
 This project has two parts 
 <br>
+<br>
 Front-end part includes HTML, CSS, JavaScript.<br> 
 Back-end part includes PHP.<br>
 Database part is MySQL.
