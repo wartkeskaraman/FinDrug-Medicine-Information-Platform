@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FinDrug</title>
+	<link rel="shortcut icon" href="icon.png" />
+	<link rel="stylesheet" type="text/css" href="secstyle.css">
+	<link rel="stylesheet" type="text/css" href="ana.css" media="only screen and (max-width: 480px)" />
+
+	<script>
+
+		var i= 0;
+		var images = [];
+		var time = 3000;
+
+
+		images[0] = 'image1.jpg';
+		images[1] = 'image2.jpg';
+		images[2] = 'image3.jpg';
+
+		function changeImg(){
+			document.slide.src = images[i];
+
+			if(i < images.length -1){
+
+				i++;
+			}
+			else{
+				i = 0;
+			}
+
+			setTimeout("changeImg()",time);
+		}
+
+		window.onload =changeImg
+
+	</script>
+</head>
+<body>
+<div id="content">
+<div id="menu">
+	<a href="second.html"><img id="syringe" src="syringe.png"/></a>
+	<a href="second.html"><p id="findrug">FinDrug</p></a>
+<ul id="menubar">
+<li><a href="drugs.html">Drugs</a></li>
+<li><a href="illness.html">Illnesses</a></li>
+<li><a href="getcompanies.php">Companies</a></li>
+<li><a href="news.html">News</a></li>
+</ul>
+<form action="search.php" method="get">
+	<input type="submit" value="Search" id="button">
+ 	<input type="text" name="search" id="search">
+ 
+</form>
+</div>	
+<div id="slide">
+	<a href="news.html"><img name="slide" width="800px" height="400px"></a>
+</div>
+</div>
+<div style="clear: both;"></div>
+<div id="footer">
+	<p>İlaçlarla ilgili değişen bilgilerden ve doktora danışmadan kullanılan tüm ilaçlardan FinDrug sorumlu değildir! FinDrug© 2018</p>
+</div>
+</body>
+</html>

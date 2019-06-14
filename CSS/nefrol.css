@@ -1,0 +1,136 @@
+body{
+	background: url(yol.jpg);
+	background-repeat: no-repeat;
+}
+
+#cont{
+	background-color: #ffffff;
+	opacity: 0.8;
+	border: 3px solid white;
+	width: 1000px;
+	height: auto;
+	position: absolute;
+	margin-left: 200px;
+	margin-top: 30px;
+}
+
+#menu{
+	border-bottom: 1px solid black;
+	height: 80px;
+	width: 1000px;
+}
+
+#syringe{
+	padding-left: 30px;
+	padding-top: 10px;
+	position:absolute;
+	
+}
+
+#findrug{
+	position: absolute;
+	padding-left: 92px;
+	padding-top: 4px;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	color: #012447;
+	font-size: 25px;
+	
+	}
+
+#menubar{
+	margin-left: 180px;
+	position: absolute;
+}
+	
+	a{
+		font-family: sans-serif, verdana;
+		font-weight: lighter;
+	}
+	
+	#menubar > li{
+		float: left;
+		list-style-type:none;
+		border: 1px solid  #CCC;
+		
+	}
+
+	#menubar > li a{
+		padding: 10px 20px;
+		color: #ffffff;
+		text-decoration: none;
+		background-color: #012447;
+		display: block;
+		font-size: 20px;
+	}
+
+	#menubar > li a:hover{
+		color: #333;
+
+	}
+
+	li.submenu ul li a{
+		text-decoration: none;
+		color: #fdfdfd;
+		background-color: #f47063;
+		padding: 7px 20px;
+		display: block; 
+	}
+
+#src{
+	float:right;
+	
+	margin-top: 20px;
+	}
+	
+#button{
+	float:right;
+	margin-right: 40px;
+	margin-top: 20px;
+	}	
+
+#clear{
+		clear: both;
+	}
+
+
+#button{
+	height: 25px;
+	width: 60px;
+	margin-top: 25px;
+	}
+
+#src{
+	height: 25px;
+	width: 150px;
+	margin-top: 25px;
+	}
+
+#mu{
+	height: 550px;
+	width: 220px;
+	float: left;
+	margin-top: 20px;
+	border: 1px solid black;
+
+
+}
+
+#mu > ul{
+	margin-top: 50px;
+	list-style-type: none;
+	display: block;
+	position: absolute;
+}
+
+#mu > ul li{
+	margin-bottom: 10px;
+}
+
+#info{
+	width: 600px;
+	height: auto;
+	margin-left:300px;
+	margin-top: 50px;
+
+}

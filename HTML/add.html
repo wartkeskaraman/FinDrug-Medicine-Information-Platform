@@ -1,0 +1,98 @@
+<?php 
+require_once("config.php");
+session_start();
+
+?>
+
+</!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>FinDrug</title>
+
+	<link rel="stylesheet" type="text/css" href="addstyle.css">
+<link rel="stylesheet" type="text/css" href="ana.css" media="only screen and (max-width: 480px)" />
+</head>
+<body>
+<div id="content">
+<div id="menu">
+	<a href="second.html"><img id="syringe" src="syringe.png"/></a>
+	<a href="second.html"><p id="findrug">FinDrug</p></a>
+<ul id="menubar">
+<li><a href="drugs.html">Drugs</a></li>
+<li><a href="illness.html">Illnesses</a></li>
+<li><a href="getcompanies.php">Companies</a></li>
+<li><a href="news.html">News</a></li>
+</ul>
+
+<form action="search.php" method="get">
+  <input type="submit" value="button" id="button">
+  <input type="text" name="search" id="search">
+ 
+</form>
+</div>	
+
+<div id="add">
+
+	<form name="form1" method="post" action="drugpage.php">
+  <table width="434" height="350" border="1">
+    <tr>
+      <td>Drug ID</td>
+      <td><label for="inum"></label>
+      <input type="text" name="inum" id="inum"></td>
+    </tr>
+    <tr>
+      <td width="115">Drug Name</td>
+      <td width="276"><input type="text" name="iad" id="iad"></td>
+    </tr>
+    <tr>
+      <td><p>Drug Company</p></td>
+      <td><label for="ifirm"></label>
+      <input type="text" name="ifirm" id="ifirm"></td>
+    </tr>
+    <tr>
+      <td>Department</td>
+      <td><label for="ihast"></label>
+        <label for="ilist"></label>
+        <select name="ilist" id="ilist">
+          <option value="Ağız Diş" selected>Ağız ve Diş H.</option>
+          <option value="Beyin Sinir">Beyin ve Sinir H.</option>
+          <option value="Dahiliye">Dahiliye</option>
+          <option value="Dermatoloji">Dermatoloji</option>
+          <option value="Genel Cerrahi">Genel Cerrahi</option>
+          <option value="Göğüs">Göğüs H.</option>
+          <option value="Göz">Göz H.</option>
+          <option value="Jinekoloji">Jinekoloji</option>
+          <option value="Kardiyoloji">Kardiyoloji</option>
+          <option value="KBB">KBB</option>
+          <option value="Nefroloji">Nefroloji</option>
+          <option value="Nöroloji">Nöroloji</option>
+          <option value="Ortopedi">Ortopedi</option>
+          <option value="Onkoloji">Onkoloji</option>
+          <option value="Psikoloji">Pskiyatri</option>
+          <option value="Üroloji">Üroloji</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><label for="ifiyat"></label>
+      <input type="text" name="ifiyat" id="ifiyat"></td>
+    </tr>
+    <tr>
+      <td height="39">Drug Info</td>
+      <td height="39"><label for="ibilgi"></label>
+      <textarea name="ibilgi" id="ibilgi" cols="45" rows="5"></textarea></td>
+    </tr>
+    <tr>
+    	
+			<td colspan="2" align="center"><input type="submit" name="ilacekle" id="ilacekle" value="Add" /></td>
+      
+    </tr>
+  </table>
+  <label for="iad"></label>
+</form>
+
+</p>
+</div>
+</body>
+</html>
