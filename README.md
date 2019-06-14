@@ -3,7 +3,8 @@
 This project is a platform that used for give informations about drugs (price, company, illness, etc). 
 In this platform there are informations about illnesses and departments.
 <br>
-This project has two parts 
+<br>
+This project has two parts: 
 <br>
 <br>
 Front-end part includes HTML, CSS, JavaScript.<br> 
